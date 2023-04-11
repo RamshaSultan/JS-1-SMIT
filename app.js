@@ -1,3 +1,6 @@
+// 7-April-2023
+
+
 // Question No. 1
 
 // let userNum = prompt("Give 1st Number");
@@ -97,3 +100,113 @@
 //   }
 //   console.log(row);
 // }
+
+
+
+
+
+// 11-April-2023
+
+
+// Question No.1
+
+// function addNumber(x) {
+//     return function(y) {
+//       return x + y;
+//     }
+//   }
+  
+//   const add5 = addNumber(5);
+  
+//   console.log(add5(10));
+//   console.log(add5(20));
+//   console.log(add5(30));
+
+
+// Question No. 2
+  
+// function searchArray(arr, val) {
+//   if (arr.length === 0) {
+//     return false;
+//   } else if (arr[0] === val) {
+//     return true;
+//   } else {
+//     return searchArray(arr.slice(1), val);
+//   }
+// }
+
+// const arr = [1, 2, 3, 4, 5];
+// console.log(searchArray(arr, 3));
+// console.log(searchArray(arr, 6));
+
+
+// Question No. 3
+
+// function addParagraph(text) {
+//   const newParagraph = document.createElement('p');
+//   newParagraph.textContent = text;
+//   document.body.appendChild(newParagraph);
+// }
+
+
+// Question No. 5
+
+// function changeBackgroundColor(element, newColor) {
+//   element.style.backgroundColor = newColor;
+// }
+// const myDiv = document.getElementById('myDiv');
+// changeBackgroundColor(myDiv, 'red');
+
+
+
+// Question No. 6
+
+// function saveObjectToLocalStorage(key, object) {
+//   localStorage.setItem(key, JSON.stringify(object));
+// }
+// const myObject = { name: 'John', age: 30 };
+// saveObjectToLocalStorage('myKey', myObject);
+// const savedObject = JSON.parse(localStorage.getItem('myKey'));
+// console.log(savedObject); // { name: 'John', age: 30 }
+
+
+
+// Question No. 7
+
+// function getObjectFromLocalStorage(key) {
+//   const serializedObj = localStorage.getItem(key);
+//   if (serializedObj === null) {
+//     return null;
+//   }
+//   try {
+//     const obj = JSON.parse(serializedObj);
+//     return obj;
+//   } catch (err) {
+//     console.error(`Failed to parse object from localStorage: ${err}`);
+//     return null;
+//   }
+// }
+
+
+
+// Question No. 8
+
+// function saveToLocalStorage(obj) {
+//   // Loop over the object's properties and set them in localStorage
+//   Object.keys(obj).forEach(key => {
+//     localStorage.setItem(key, JSON.stringify(obj[key]));
+//   });
+  
+//   // Loop over the keys in localStorage and construct a new object with the saved properties
+//   const newObj = {};
+//   Object.keys(localStorage).forEach(key => {
+//     newObj[key] = JSON.parse(localStorage.getItem(key));
+//   });
+  
+//   return newObj;
+// }
+
+
+
+
+
